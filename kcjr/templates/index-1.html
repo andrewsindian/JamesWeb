@@ -1,0 +1,510 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>FMML</title>
+
+    <!-- Google Font -->
+    <link href="{%static 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap' %}" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}" type="text/css">
+   
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu">
+        <div class="offcanvas__logo">
+            <a href="{% static './index.html' %}"><img src="{% static 'img/logo-128x128-9.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <ul>
+                <li>CALL: + 91 4066794305</li>
+                <li>WRITE US: kcjrsp@uohyd.ac.in</li>
+                <li>OPENING TIMES: MON - FRI: 9:00 AM - 6:00PM</li>
+            </ul>
+            <a href="{% static './opening.html' %}" class="primary-btn">OPENINGS</a>
+        </div>
+        <nav class="header__menu">
+            <ul class="mobile-menu">
+                <li class="active"><a href="{% static './index.html' %}">Home</a></li>
+                <li><a href="#">Research</a>
+                    
+                <li><a href="{% static './classes.html' %}">Team members</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="{% static './classes-details.html' %}">Classes Details</a></li>
+                        <li><a href="{% static './blog-details.html' %}">Blog Details</a></li>
+                        <li><a href="{% static './pricing.html' %}">Pricing</a></li>
+                        <li><a href="{% static './faq.html' %}">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% static './blog.html' %}">Blog</a></li>
+                <li><a href="{% static './contact.html' %}">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__logo">
+                            <a href="{%static './index.html' %}"><img src="{%static 'img/logo-128x128-9.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-9">
+                        <div class="header__top__widget">
+                            <ul>
+                                <li>CALL: + 91 4066794305</li>                                
+                                <li>WRITE US: kcjrsp@uohyd.ac.in</li>
+                                <li>OPENING TIMES: MON - FRI: 9:00 AM - 6:00PM</li>
+                            </ul>
+                            <a href="{% static './opening.html' %}" class="primary-btn">OPENINGS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="{% static './index.html'%}">Home</a></li>
+                                
+                                <li><a href="#">Research</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% static './Thinfilm.html' %}">Thin films</a></li>
+                                        <li><a href="{% static './Microwave.html'% }">Microwave</a></li>                                                                                 
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="#">Team members</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% static './members.html' %}">Members</a></li>
+                                        <li><a href="{% static './Alumni.html' %}">Alumini</a></li>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Facilities</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% static '././MaterialPreparation.html' %}">Lab Facilities</a></li>
+                                        <li><a href="{% static '././CentralFacilities.html' %}">Central Facilities</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% static '././Photos.html' %}">Gallery</a></li>
+                                
+                                <li><a href="{% static '././Publications.html' %}">More</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__sliders owl-carousel">
+            <div class="hero__items set-bg" data-setbg="{% static 'img/kcjr-2000x1301-13.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                
+                                <h2>There is no complete theory of anything</h2>
+                                <a href="#" class="primary-btn">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="{% static 'img/fulllab.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">                               
+                                
+                                <h3 style="color:rgba(254, 254, 255, 0.996);">WITHOUT LABORATORIES MEN OF SCIENCE ARE SOLDIERS WITHOUT ARMS…</h3>
+                                <a href="#" class="primary-btn">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="{% static 'img/uni.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">                               
+                                
+                                <h2> "Education results in liberation"</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="home__about__pic">
+                        <div class="home__about__pic__item large-item set-bg" data-setbg="{% static 'img/about/about-1.jpg' %}"></div>
+                        <div class="home__about__pic__item">
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="{% static 'img/about/about-2.jpg' %}"></div>
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="{% static 'img/about/about-3.jpg' %}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home__about__text">
+                        <div class="section-title">
+                            <img src="{% static 'img/icon.png' %}" alt="">
+                            <h2>Professor Dr K C James Raju </h2>
+                        </div>
+                        <span>Brief Biodata</span>
+                        <p>
+                            2009- present Professor of Electronic Science at School of Physics, University of Hyderabad (UoH), Hyderabad, India.<br>
+                            
+                            2006- 2009 Associate Professor of Electronic Science at School of Physics, UoH.<br>
+                            
+                            2003- 2006 Reader of Electronic Science at School of Physics, UoH<br>
+                            
+                            2001- 2003 Senior Lecturer of Electronic Science at School of Physics, UoH.<br>
+                            
+                            1995-PhD-in Microwave Materials and Devices. From Indian Institute of Technology (IIT), Madras, 
+                            
+                            Title of Thesis: Correlations between Microwave Dielectric Resonator Materials and Ferroelectrics in (Ba,Sr)(Zr,Ti)O3 system.<br>
+                            
+                            1995-1996 Post Doctoral Fellow, Indian Institute of Technology, Madras, India.<br>
+                            
+                            1996- 2001 Lecturer of Electronic Science at School of Physics, UoH<br>
+                            
+                            1986- MSc -MG University- India<br>
+                            </p>
+                        <a href="https://www.researchgate.net/profile/James_Raju" class="primary-btn">Researchgate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <img src="{% static 'img/icon.png'%}" alt="">
+                        <h2>General Overview</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="services__list">
+                <div class="row">
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'img/services/services-1.png'%}" alt="">
+                            <h5>Awards & Fellowships</h5>
+                            <p>Member of editorial board : American Journal of Modern Physics.
+
+                                Elected Life Member of National Academy of Sciences, India.
+                                
+                                 Patent on "A process for the preparation of dielectric resonators for microwave applications" 
+                                
+                                Summer fellowship at the Microsystems division at ITC-IRST, Trento, Italy.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'img/services/services-2.png'%}" alt="">
+                            <h5> Reviewer of Journals </h5>
+                            <p>
+                                IEEE Microwave and Guided Wave Letters
+                                
+                                Journal of Physical Chemistry
+                                
+                                Applied Physics Letters
+                                
+                                Journal of Applied Physics
+                                
+                                Materials Letters
+                                
+                                Materials Science and Engineering B
+                                
+                                Journal of Alloys and Compounds
+                                
+                                Bulletin of Materials Science
+                                
+                                Micro and Nano Letters
+                                
+                                American Ceramic Soceity
+                                
+                                
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'img/services/services-3.png'%}" alt="">
+                            <h5>MEMBERSHIPS</h5>
+                            <p> IEEE
+
+                                IEEE- Microwave Theory and Techniques
+                                
+                                Institute of Smart Structures and Systems (ISSS)
+                                
+                                Microwave Apllications Society of India (MASI)
+                                
+                                Material Research Society of India (MRSI)
+                                
+                                American Ceramic Society
+                                
+                                Indian Ceramic Society
+                                
+                                Indian Physics Association (IPA)
+                                
+                                Indian Science Congress Association
+                                <br>
+                                <br>
+                                </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-5.png" alt="">
+                            <h5>Characterization</h5>
+                            <p>Precision Impedance Analyser (40Hz to 110MHz).<br>
+
+                                J Microtechnology make RF/DC Probe Station.<br>
+                                
+                                Fluke LCR Meter PM6304, Programmable DC source.<br>
+                                
+                                Spectrophotometer. UV/Visible/IR.<br>
+                                
+                                Microwave components: C to K band.<br>
+                                
+                                Ferroelectric Material Test System.
+                                
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-5.png" alt="">
+                            <h5>Material Preparation</h5>
+                            <p>Ball Mill, Hydraulic Press, Powder compaction Dies.<br>
+
+                                Furnaces up to 1760C.<br>
+                                Pulsed Laser Deposition System.<br>
+                                Sputtering system with 2 RF and One DC sources.<br>
+                                                         
+                                Ion beam sputtering system- using Kaufmann Ion source.<br>                       
+                                                                                           
+                                
+                                Laurell make Spin Coater, Laminar air flow table.<br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-6.png" alt="">
+                            <h5>Recent Projects</h5>
+                            <p>Laser annealing of ferroelectric thin films  DST  2014-2017. <br>  
+                                Leakage current studies with PLD grown FE thin films  DRDO <br> 2015-17. <br>  
+                                Design of a Mode Converter for fusion systems BRNS 2015-16.<br>   
+                                Characterisation of devices with variable reactance having application in Microwave filters.    
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Chooseus Section Begin -->
+    
+    <!-- Appoinment Section Begin -->
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment__text">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <img src="img/icon-white.png" alt="">
+                            <h2>Make An Appointment</h2>
+                        </div>
+                    </div>
+                </div>
+                <form action="enquiry" method="GET"class="appointment__form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="class-select">
+                                <option value="">Purpose</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <textarea placeholder="Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Appoinment Section End -->
+
+   
+
+    <!-- Footer Section Begin -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Links</h5>
+                        <ul>
+                            <li><a href="https://www.researchgate.net/profile/James_Raju">Researchgate</a></li>
+                            <li><a href="https://scholar.google.co.in/citations?user=cVtIZtcAAAAJ&hl=en&oi=ao">Google Scholar</a></li>
+                            <li><a href="https://in.linkedin.com/in/dr-k-c-james-raju-1a79003">Linked In</a></li>
+                          
+                        </ul>
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="450" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                </iframe>
+                                <a href="https://www.whatismyip-address.com/nordvpn-coupon/"> </a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div>
+                    </div>
+                </div>
+              
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>L</h5>
+                        <ul>
+                            <li><a href="https://www.researchgate.net/profile/James_Raju">e</a></li>
+             
+                          
+                        </ul>
+                            
+                        
+                    </div>
+                </div>
+               
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Contact Us</h5>
+                        
+                            <p>Dr. K.C James Raju<br>
+                                Professor in Electronics<br>
+                                School of Physics<br>
+                                University of Hyderabad<br>
+                                Gachibowli, Hyderabad-500 046.<br>
+                                Andhra Pradesh, INDIA</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer__copyright__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static'js/bootstrap.min.js' %}"></script>
+    <script src="{% static'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static'js/jquery.barfiller.js' %}"></script>
+    <script src="{% static'js/jquery.slicknav.js"></script>
+    <script src="{% static'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static'js/main.js' %}"></script>
+</body>
+
+</html>
