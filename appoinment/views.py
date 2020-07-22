@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from django.core.mail import send_mail
+from django.core.mail import send_mass_mail
 
 # Create your views here.
-def index(request):
-    return render(request,"index.html")
+
 def home(request):
     return render(request,"index.html")
 def openings(request):
@@ -36,15 +35,26 @@ def contact(request):
         mname= request.POST['messenger']
         emails=request.POST['emails']
         message=request.POST['message']
-        
-        send_mail(
-            'web request - '+ mname,
-            message,
-            emails,
-            ['andrewsjoseph120@gmail.com',emails],
-
-        )
+        msg=message+"\n" "from email id :"+ emails
+        msg1="Dear"+mname+ ",\n" "We will respond to your request as early as possible for immediate response you may directly call us.\n" "Your message \n"+message
+        mes1=('Recived Web request FMML',msg1,'kcjrsop@gmail.com',[emails])
+        mes2=('Web request from '+mname,'Request:'+msg,'kcjrsop@gmail.com',['andrewsjoseph120@gmail.com'])
+        send_mass_mail( (mes1,mes2),fail_silently=False)
+            
+    
         return render(request,'contact.html',{'messenger':mname})
     else:    
         return render(request,'contact.html')
-    
+def index(request):
+            if request.method=='POST':
+                mname= request.POST['messenger']
+                emails=request.POST['emails']
+                message=request.POST['message']
+                msg=message+"\n" "from email id :"+ emails
+                msg1="Dear"+mname+ ",\n" "We will respond to your request as early as possible for immediate response you may directly call us.\n" "Your message \n"+message
+                mes1=('Recived Web request FMML',msg1,'kcjrsop@gmail.com',[emails])
+                mes2=('Web request from '+mname,'Request:'+msg,'kcjrsop@gmail.com',['andrewsjoseph120@gmail.com'])
+                send_mass_mail( (mes1,mes2),fail_silently=False)
+                return render(request,'contact.html',{'messenger':mname})
+            else:
+                return render(request,"index.html")
